@@ -1,0 +1,8 @@
+[build]
+  functions = "netlify-functions"  # Path where serverless functions are stored
+  publish = "."  # Publish static files (index.html) from the root directory
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
