@@ -165,13 +165,14 @@
     loadingElement.style.display = "block";
 
     try {
-        const response = await fetch('/.netlify/functions/process_video', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ url: videoUrl })
-        });
+        const response = await fetch('https://youtubevideodownloade.netlify.app/.netlify/functions/process_video', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ url: videoUrl })
+});
+
 
         // Check if the response is not empty and valid JSON
         const data = await response.json().catch(() => null); // Safely parse JSON

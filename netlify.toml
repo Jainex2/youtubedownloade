@@ -1,5 +1,5 @@
 [build]
-  functions = "netlify-functions"  # Path where serverless functions are stored
+  functions = "netlify/functions"  # Path where serverless functions are stored
   publish = "."  # Publish static files (index.html) from the root directory
 
 [[redirects]]
